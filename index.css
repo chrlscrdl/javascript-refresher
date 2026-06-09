@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fa;
+  padding: 2rem;
+}
+.navigation{
+  display: flex;
+}
+
+.navigation ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px
+}
+
+.navigation li
+
+.section-about {
+  margin-top: 10px;
+}
+
+.container{
+  background: dodgerblue;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px; 
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.logo img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+
+.container-flex-box {
+  background: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flex-box-items {
+  order: 1;
+  flex-grow: 1;
+  flex-shrink: 2;
+  /* initial size prior to shrink/grow */
+  flex-basis: 200px; 
+  flex: 1 2 200px;
+  /* across the main axis = container.align-items */
+  align-self: center; 
+}
+
+
+.container-position-practice {
+  /* can't use offset values, initial position value */
+  position: static;
+  /* can be offset using top,left,right,bottom */
+  position: relative;
+  /* stays in the viewport regardless if the page is being scrolled */
+  position: fixed; 
+  /* positioned relative to the nearest positioned anchor (with position other than static - important) */
+  position: absolute;
+  /* initially relative and then becomes fixed after scrolling  */
+  /* should set atleast 1 offset on where the element will "stick" e.g, top: 0 */
+  position: sticky
+}
+
+
+.container-grid {
+  background: deepskyblue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px, 200px;
+  gap: 10px;
+}
+
+.container-grid > div {
+  background: red;
+}
